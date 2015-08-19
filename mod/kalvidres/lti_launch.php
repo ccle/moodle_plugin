@@ -42,6 +42,7 @@ $context = context_course::instance($courseid);
 if (!has_capability('mod/kalvidres:addinstance', $context) && is_guest($context)) {
     echo get_string('nocapabilitytousethisservice', 'error');
     die();
+    }
 }
 
 $course = get_course($courseid);
